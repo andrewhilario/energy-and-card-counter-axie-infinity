@@ -9,7 +9,7 @@
 }
 body{
     font-family: "Montserrat";
-    background-image: url(/background.png);
+    background-image: url(background.png);
     color: white;
 }
 
@@ -17,7 +17,8 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin-inline: auto;
 }
 .title{
     text-align: center;
@@ -34,19 +35,19 @@ body{
     margin-bottom: 4.5rem;
 }   
 .energy{
-    width: 25%;
-    height: 50vh;
+    width: 20%;
+    height: 40vh;
     background-color: rgba(255, 214, 0, 1);
     border-radius: 55px;
 }
 .energy h2{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: "Poppins";
     font-weight: 400;
     text-align: center;
 }
 .energy #energy{
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
@@ -68,13 +69,13 @@ body{
     
 }
 .cards{
-    width: 25%;
-    height: 50vh;
+    width: 20%;
+    height: 40vh;
     background-color: rgba(226, 113, 113, 1);
     border-radius: 55px;
 }
 .cards h2{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: "Poppins";
     font-weight: 400;
     text-align: center;
@@ -83,7 +84,7 @@ body{
     width: 100px;
     display: block;
     margin-inline: auto;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
@@ -101,7 +102,7 @@ body{
     text-align: center;
 }
 .zeroCost{
-    margin-top: 12.3rem;
+    margin-top: 7rem;
     width: 15%;
     height: 30vh;
     background-color: rgba(223, 124, 69, 1);
@@ -224,7 +225,7 @@ body{
         font-size: 2.5rem;
     }
     .cards h3{
-        margin-top: 5rem;
+        margin-top: 7rem;
         font-family: "Montserrat";
         font-weight: bold;
         font-size: 1rem;
