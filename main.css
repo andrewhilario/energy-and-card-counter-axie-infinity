@@ -9,7 +9,7 @@
 }
 body{
     font-family: "Montserrat";
-    background-image: url(background.png);
+    background-image: url(/background.png);
     color: white;
 }
 
@@ -22,12 +22,12 @@ body{
 .title{
     text-align: center;
     margin-top: 5rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
 }
 .subtitle{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     
     margin-top: 2rem;
@@ -40,13 +40,13 @@ body{
     border-radius: 55px;
 }
 .energy h2{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-family: "Poppins";
     font-weight: 400;
     text-align: center;
 }
 .energy #energy{
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
@@ -63,7 +63,7 @@ body{
     margin-top: 7rem;
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     
 }
@@ -74,7 +74,7 @@ body{
     border-radius: 55px;
 }
 .cards h2{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-family: "Poppins";
     font-weight: 400;
     text-align: center;
@@ -83,7 +83,7 @@ body{
     width: 100px;
     display: block;
     margin-inline: auto;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
@@ -97,7 +97,7 @@ body{
     margin-top: 7rem;
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
 }
 .zeroCost{
@@ -109,7 +109,7 @@ body{
 }
 .zeroCost h2{
     margin-top: 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Poppins";
     font-weight: 400;
     text-align: center;
@@ -118,7 +118,7 @@ body{
     margin-top: 6rem;
     font-family: "Montserrat";
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
 }
 .buttons{
@@ -180,4 +180,111 @@ body{
     cursor: pointer;
     border: none;
     outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction:column;
+    }
+    .energy{
+        width: 80%;
+        height: 55vh;
+    }
+    .energy h2{
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        font-family: "Poppins";
+        font-weight: 400;
+        text-align: center;
+    }
+    .energy #energy{
+        font-size: 2.5rem;
+    }
+    .energy h3{
+        margin: 7rem auto;
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .cards{
+        margin-top: 8.5rem;
+        width: 80%;
+        height: 55vh;
+    }
+    .cards h2{
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        font-family: "Poppins";
+        font-weight: 400;
+        text-align: center;
+    }
+    .cards #energy{
+        font-size: 2.5rem;
+    }
+    .cards h3{
+        margin-top: 5rem;
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .zeroCost{
+        margin-top: 8.5rem;
+        width: 80%;
+        height: 45vh;
+    }
+    .zeroCost h2{
+        margin-top: 1.5rem;
+        font-size: 2rem;
+        font-family: "Poppins";
+        font-weight: 400;
+        text-align: center;
+    }
+    .zeroCost #energy{
+        font-size: 2.5rem;
+    }
+    .zeroCost h3{
+        margin-top: 7rem;
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .buttons{
+        width: 65%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-inline: auto;
+        margin-top: 3.5rem;
+        color: black;
+        text-align: center;
+    }
+    .minus{
+        font-size: 2.5rem;
+        font-family: "Montserrat";
+        font-weight: bold;
+        width:55px;
+        height:55px;
+        background-color: white;
+        border-radius: 15px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    .add{
+        font-size: 2.5rem;
+        font-family: "Montserrat";
+        font-weight: bold;
+        width:55px;
+        height:55px;
+        background-color: white;
+        border-radius: 15px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
 }
