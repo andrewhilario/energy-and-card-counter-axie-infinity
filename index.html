@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axie PVP Energy and Card Counter</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <h1 class="title">Axie PVP Energy and Card Counter</h1>
+    <p class="subtitle">This is for Arena use only to help the beginners when playing Axie Infinity</p>
+
+    <div class="container">
+        <div class="energy">
+            <h2>Energy</h2>
+            <input type="text" id="energy" value="3" min="0" max="10">
+            <div class="buttons">
+                <input type='button' class="minus" id="minus" value="-">
+                <input type='button' class="add" id="add" value="+">
+            </div>
+            <h3>Note: Every round 2 energy will add </h3>
+        </div>
+        <div class="cards">
+            <h2>Cards</h2>
+            <input type="text" id="cards" value="6" min="3" max="12">
+            <div class="buttons">
+                <input type='button' class="minus" id="subtraction" value="-">
+                <input type='button' class="add" id="addition" value="+">
+            </div>
+            <h3>Note: Every round 3 cards will add </h3>
+        </div>
+        <div class="zeroCost">
+            <h2>0 Cost Cards</h2>
+            <div class="buttons">
+                <!-- <input type='button' class="subs" id="subs" value="-"> -->
+                <input type='button' class="adds" id="adds" value="+">
+            </div>
+            <h3>Note: This is for zero cost cards and it will decrease the cards from the enemies hand </h3>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
