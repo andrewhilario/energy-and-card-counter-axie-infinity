@@ -133,11 +133,11 @@ body{
     text-align: center;
 }
 .minus{
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-family: "Montserrat";
     font-weight: bold;
-    width:100px;
-    height: 100px;
+    width:80px;
+    height: 80px;
     background-color: white;
     border-radius: 30px;
     cursor: pointer;
@@ -145,11 +145,11 @@ body{
     outline: none;
 }
 .add{
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-family: "Montserrat";
     font-weight: bold;
-    width:100px;
-    height: 100px;
+    width:80px;
+    height: 80px;
     background-color: white;
     border-radius: 30px;
     cursor: pointer;
@@ -160,8 +160,8 @@ body{
     font-size: 3rem;
     font-family: "Montserrat";
     font-weight: bold;
-    width:70px;
-    height: 70px;
+    width:60px;
+    height: 60px;
     background-color: white;
     border-radius: 15px;
     text-align: center;
@@ -171,11 +171,11 @@ body{
 }
 .adds{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Montserrat";
     font-weight: bold;
-    width:70px;
-    height: 70px;
+    width:60px;
+    height: 60px;
     background-color: white;
     border-radius: 15px;
     cursor: pointer;
