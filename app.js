@@ -1,68 +1,115 @@
+let valueCards = parseInt(document.getElementById('cards').value)
+let valueEnergy = parseInt(document.getElementById('energy').value)
+var adds = document.getElementById("addition")
+var add = document.getElementById("add")
+var nxtGame = document.getElementById('nxtG')
+
 function energyCount(){
-    let add = document.getElementById("add")
     var minus = document.getElementById("minus")
-
+    var nxt = document.getElementById('nxt')
+    var i = 1
     
+    
+    
+    nxt.addEventListener('click', ()=>{
 
-    add.addEventListener('click', ()=>{
-        var value = parseInt(document.getElementById('energy').value)
+        i++
+
+        var round = document.getElementById('round').innerHTML = "Round " + i;
         
         
-
-        if(value === 9){
-            value++;
-            document.getElementById("energy").value = value;
+        if(valueEnergy === 9){
+            valueEnergy++;
+            document.getElementById("energy").value = valueEnergy;
         }else{
-            value+=2;
-            document.getElementById("energy").value = value;
+            valueEnergy+=2;
+            document.getElementById("energy").value = valueEnergy;
         }
 
-        if(value === 10){
+        
+
+        if(valueEnergy === 10){
             add.disabled = true
+            nxt.disabled = true
+        }
+
+        if(valueCards === 11){
+
+            valueCards++;
+            document.getElementById("cards").value = valueCards;
+        }else if(valueCards === 10){
+            valueCards+=2;
+            document.getElementById("cards").value = valueCards;
+        }else{
+            valueCards+=3;
+            document.getElementById("cards").value = valueCards;
+        }
+
+
+        if(valueCards === 12){
+            adds.disabled = true
+            nxt.disabled = true
+        }
+   
+    })
+    add.addEventListener('click', ()=>{
+        
+        
+        valueEnergy++;
+        document.getElementById("energy").value = valueEnergy;
+
+        if(valueEnergy === 10){
+            add.disabled = true
+            nxt.disabled = true
         }
         minus.disabled = false
     })
     minus.addEventListener('click', ()=>{
-        let value = parseInt(document.getElementById('energy').value)
-        value--;
-        document.getElementById("energy").value = value;
+        valueEnergy--;
+        document.getElementById("energy").value = valueEnergy;
 
-        if(value == 0){
+        if(valueEnergy == 0){
+            
             minus.disabled = true
         }
         add.disabled = false
+        nxt.disabled = false
+    })
+
+    nxtGame.addEventListener('click', ()=>{
+        window.location.reload();
     })
 
 }
 energyCount();
 
 function cardCount(){
-    const adds = document.getElementById("addition")
+    
     const minuses = document.getElementById("subtraction")
     const plus = document.getElementById("adds")
-    
 
     adds.addEventListener('click', ()=>{
-        var value = parseInt(document.getElementById('cards').value)
-        value+=3;
-        document.getElementById("cards").value = value;
+       
+        valueCards++;
+        document.getElementById("cards").value = valueCards;
 
-        if(value == 12){
+        if(valueCards === 12){
             adds.disabled = true
+            nxt.disabled = true
         }
         minuses.disabled = false
         plus.disabled = false
     })
     minuses.addEventListener('click', ()=>{
-        let value = parseInt(document.getElementById('cards').value)
-        value--;
-        document.getElementById("cards").value = value;
+        valueCards--;
+        document.getElementById("cards").value = valueCards;
 
-        if(value == 0){
+        if(valueCards == 0){
             minuses.disabled = true
             plus.disabled = true
         }
         adds.disabled = false
+        nxt.disabled = false
     })
     
     
